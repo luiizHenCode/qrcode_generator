@@ -1,11 +1,9 @@
-import { useRef, useState } from "react";
-import QRCode, { CanvasQRCodeProps } from "qrcode.react";
+import { useState } from "react";
+import QRCode from "qrcode.react";
 
 import styles from "./styles/App.module.scss";
 
 function App() {
-  const linkRef = useRef<any>();
-
   const [code, setCode] = useState<string>("");
 
   const handleDownloadQRcode = () => {
