@@ -1,0 +1,82 @@
+.container {
+  max-width: 960px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .inputContainer {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+
+    input {
+      flex: 1;
+      height: 60px;
+
+      padding: 0 20px;
+      margin-bottom: 20px;
+
+      border-radius: 3px;
+      border: 1px solid #ccc;
+
+      font-size: 14px;
+    }
+  }
+
+  .codeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 30px;
+
+    .QrCodeWrapper {
+      background-color: #fafafa;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      canvas {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 20px;
+      }
+    }
+
+    .btnDownloadQRcode {
+      height: 50px;
+      padding: 0 20px;
+
+      border: none;
+      border-radius: 5px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      background-color: slateblue;
+    }
+  }
+}
